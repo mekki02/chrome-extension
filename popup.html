@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="loading">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="logout-container">
+    <span class="back-button">
+      <i class="fas fa-arrow-left"></i>
+    </span>
+    <span class="logout-icon">
+      <i class="fas fa-power-off"></i>
+    </span>
+  </div>
+  <div class="login-section">
+    <div class="influensLogoRow">
+      <img class="logo"
+        src="https://res.cloudinary.com/tellmedia/image/upload/c_scale,w_274/v1525267354/shopmyinfluens/logo.png"
+        width=180 height=90 />
+    </div>
+    <p class="connection-placeholder">Connectez-vous à votre compte</p>
+    <div class="form">
+      <div style="width: 80%;">
+        <div class="input-box">
+          <input id='email' class="input-field" type="email" placeholder="Email"
+            style="width: 100%;border-top-right-radius: 10px; border-bottom-right-radius: 10px;" />
+        </div>
+        <div class="input-box">
+          <input id='password' class="input-field" type="password" placeholder="Password" />
+          <div class="icon-container"
+            style="display: flex; justify-content: center; align-items: center; width: 10%; height: 40px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+            <span class="password-icon">
+              <i id='icon' class="fas fa-eye"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="redirections-row">
+        <p class="no-account-placeholder">Vous n'avez pas de compte ? <span class="signup-redirection">S'inscrire</span>
+        </p>
+        <!-- <p class="forgotten-password-redirection">Mot de passe oublié ?</p> -->
+      </div>
+      <p class="login-button">Sign In</p>
+      <p class="error-placeholder">Error placeholder</p>
+    </div>
+  </div>
+  <div class="wishlist-section">
+    <div class="user-info-row">
+      <div class="user-image-container">
+        <img
+          src='http://res.cloudinary.com/tellmedia/image/upload/v1609168750/shopmyinfluens/banners/coraliezielinka%40gmail.com.jpg'
+          width="100%" class="userImage" />
+      </div>
+      <div class="userDetailInfoContainer">
+        <p class="user-name">Youssef Mekki</p>
+      </div>
+    </div>
+    <div class="wishlistRow">
+      <div class="wishlist-placeholders">
+        <p id='step-one' class="wishlist-subtitle-placeholder" style='margin-top: 5;'>1. Choisi une wishlist pour y ajouter des
+          produits !</p>
+        <select class="wishlist-selector">
+          <option class="wishlist-selector-placeholder" value="" disabled selected>Select a wishlist</option>
+        </select>
+        <p id='wishlist-creation-label' class="wishlist-subtitle-placeholder">Ou crée une nouvelle wishlist !</p>
+        <p id='wishlist-creation-placeholder' class="create-wishlist-button">Créer une wishlist</p>
+        <p id='step-two' class="wishlist-subtitle-placeholder">2. Choisi une marque !</p>
+        <p class="show-brand-list-button">Liste des marques</p>
+      </div>
+      <div class="wishlist-add-section">
+        <p class="wishlist-name-placeholder">Enter wishlist name</p>
+        <div class="input-box">
+          <input id='wishlist' class="input-field" type="email" placeholder="Wishlist Name..."
+            style="width: 100%;border-top-right-radius: 10px; border-bottom-right-radius: 10px;" />
+        </div>
+        <div class="add-wishlist-buttons">
+          <!-- <p class="cancel-wishlist-button">Cancel</p> -->
+          <p class="wishlist-save-button">Add wishlist</p>
+        </div>
+      </div>
+      <div class="choose-brand-section">
+        <p id='step-two-prime' class="wishlist-subtitle-placeholder">2. Choisi la marque que tu souhaites !</p>
+        <select class="categories-selector">
+          <option class="categories-selector-placeholder" value="" disabled selected>Catégories</option>
+        </select>
+        <div class="brands-container">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="instructions-section">
+    <div class="instructions-container">
+      <p class="instruction-placeholder">3. Clique droit sur le produit que tu souhaite ajouter et clique sur « ajouter
+        à la wishlist » pour ajouter à
+        ta wishlist</p>
+      <img src='./images/demo-instruction.gif' />
+    </div>
+  </div>
+  <script src="app.js" type='module'></script>
+</body>
+
+</html>
